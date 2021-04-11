@@ -6,7 +6,7 @@ function _drawTodo() {
     let todos = ProxyState.todos
     let remaining = todos.filter(t => t.completed == false).length
     let template = ''
-    template += `<div class="d-flex justify-content-end mr-2"><small>${remaining}</small></div>`
+    template += `<div class="d-flex justify-content-end mr-2 txt-shadow"><small>${remaining}</small></div>`
     todos.forEach(t => template += t.todoTemplate)
     document.getElementById('todo').innerHTML = template
 }

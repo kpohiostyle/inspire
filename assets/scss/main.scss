@@ -24,17 +24,19 @@ main {
 .weather{
   background-color: transparent;
   border: none;
-  text-shadow: 1px 1px  black;
+  
 }
 .middle{
   min-height: 60vh;
-  text-shadow: 1px 1px  black;
+  
 }
-.quote{
-  text-shadow: 1px 1px  black;
-}
+
 ul{
   list-style: none;
+  font-family: 'Dancing Script', cursive;
+}
+li{
+  font-size: 1.5rem;
 }
 
 #name{
@@ -64,6 +66,25 @@ input:focus, textarea:focus, select:focus{
   visibility: visible;
   opacity: 1;
   
+}
+// .icon{
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: visibility 0s, opacity 1s linear;
+// }
+
+// .list:hover +.icon{
+//   visibility: visible;
+//   opacity: 1;
+  
+// }
+// .icon:hover +.icon{
+//   visibility: visible;
+//   opacity: 1;
+  
+// }
+.txt-shadow{
+  text-shadow: 1px 1px  black;
 }
 
 

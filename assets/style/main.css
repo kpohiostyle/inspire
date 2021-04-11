@@ -10703,20 +10703,19 @@ main {
 .weather {
   background-color: transparent;
   border: none;
-  text-shadow: 1px 1px black;
 }
 
 .middle {
   min-height: 60vh;
-  text-shadow: 1px 1px black;
-}
-
-.quote {
-  text-shadow: 1px 1px black;
 }
 
 ul {
   list-style: none;
+  font-family: "Dancing Script", cursive;
+}
+
+li {
+  font-size: 1.5rem;
 }
 
 #name {
@@ -10750,6 +10749,10 @@ input:focus, textarea:focus, select:focus {
 .content:hover + .author {
   visibility: visible;
   opacity: 1;
+}
+
+.txt-shadow {
+  text-shadow: 1px 1px black;
 }
 
 /*# sourceMappingURL=main.css.map */
