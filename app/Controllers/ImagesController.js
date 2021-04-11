@@ -40,7 +40,7 @@ export default class ImagesController {
     constructor() {
         ProxyState.on("image", _drawImage);
         this.getImage()
-        // setInterval(showTime, 1000);
+        setInterval(showTime, 1000);
     }
 
     async getImage() {
