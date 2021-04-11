@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
- 
   
   
 }
@@ -54,7 +53,7 @@ input:focus, textarea:focus, select:focus{
 .absolute{
   position: fixed;
   bottom:0;
-  right:-1rem;
+  right:0;
 }
 .author{
   visibility: hidden;
