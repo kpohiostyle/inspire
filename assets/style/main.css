@@ -10707,6 +10707,11 @@ main {
 
 .middle {
   min-height: 60vh;
+  text-shadow: 1px 1px black;
+}
+
+.quote {
+  text-shadow: 1px 1px black;
 }
 
 ul {
@@ -10741,16 +10746,14 @@ input:focus, textarea:focus, select:focus {
 }
 
 .author {
-  display: none;
-}
-
-.content:hover {
-  animation-timing-function: ease-in 2s;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 .content:hover + .author {
-  display: block;
-  animation-timing-function: ease-in 2s;
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

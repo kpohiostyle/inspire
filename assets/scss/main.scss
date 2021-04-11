@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  
 }
 
 main {
@@ -24,6 +25,10 @@ main {
 }
 .middle{
   min-height: 60vh;
+  text-shadow: 1px 1px  black;
+}
+.quote{
+  text-shadow: 1px 1px  black;
 }
 ul{
   list-style: none;
@@ -52,14 +57,16 @@ input:focus, textarea:focus, select:focus{
   right:-1rem;
 }
 .author{
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
-.content:hover{
-  animation-timing-function: ease-in 2s;
-}
+// .content:hover{
+//   animation-timing-function: ease-in 2s;
+// }
 .content:hover +.author{
-  display: block;
-  animation-timing-function: ease-in 2s;
+  visibility: visible;
+  opacity: 1;
   
 }
 
