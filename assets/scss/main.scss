@@ -15,6 +15,53 @@ body {
 main {
   flex-grow: 1;
 }
+.todo{
+  background-color: lightgray;
+  border: none;
+}
+.weather{
+  background-color: rgb(56, 55, 55)  !important;
+}
+.middle{
+  min-height: 60vh;
+}
+ul{
+  list-style: none;
+}
+
+#name{
+  border-bottom: 1px solid;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none !important;
+}
+.transparent{
+  background-color: transparent;
+}
+.maybe{
+  display: none;
+  
+}
+.item:hover + .maybe{
+  display: inline;
+  cursor: pointer;
+}
+.absolute{
+  position: fixed;
+  bottom:0;
+  right:-1rem;
+}
+.author{
+  display: none;
+}
+.content:hover{
+  animation-timing-function: ease-in 2s;
+}
+.content:hover +.author{
+  display: block;
+  animation-timing-function: ease-in 2s;
+  
+}
 
 
 

@@ -5,6 +5,9 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   image = null
 
+  weather = null
+  quote = null
+
   todos = []
 }
 

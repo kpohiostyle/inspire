@@ -39,4 +39,14 @@ export default class TodosController {
             console.error(error)
         }
     }
+
+    async checkedBox(bool, id) {
+        try {
+            todosService.checkedBox(bool, id)
+
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
 }

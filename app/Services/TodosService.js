@@ -19,6 +19,16 @@ class TodosService {
         await api.delete('kevin/todos/' + id)
         ProxyState.todos = ProxyState.todos.filter(todo => todo.id != id)
     }
-}
+    async checkedBox(bool, id) {
+        let checked = ProxyState.todos.find(t => t.id === id)
+        if (checked.completed) {
+            await api.put('kevin/todos/' + id, { completed: false })
+            checked.completed = false
+        } else
+            await api.put('kevin/todos/' + id, { completed: true })
+        checked.completed = true
+        ProxyState.todos = ProxyState.todos
+    }
 
+}
 export const todosService = new TodosService();
