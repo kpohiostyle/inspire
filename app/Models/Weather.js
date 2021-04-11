@@ -1,4 +1,4 @@
-import { weatherService } from "../Services/WeatherService.js";
+// import { weatherService } from "../Services/WeatherService.js";
 
 export default class Weather {
     constructor({ name, main }) {

@@ -3,9 +3,4 @@ export default class Image {
         this.url = url
     }
 
-    get Template() {
-
-
-
-    }
 }

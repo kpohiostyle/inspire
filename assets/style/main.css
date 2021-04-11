@@ -10687,9 +10687,7 @@ h3 {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background-size: cover;
-  background-position: center;
 }
 
 main {
@@ -10702,7 +10700,9 @@ main {
 }
 
 .weather {
-  background-color: #383737 !important;
+  background-color: transparent;
+  border: none;
+  text-shadow: 1px 1px black;
 }
 
 .middle {
@@ -10730,13 +10730,8 @@ input:focus, textarea:focus, select:focus {
   background-color: transparent;
 }
 
-.maybe {
-  display: none;
-}
-
-.item:hover + .maybe {
-  display: inline;
-  cursor: pointer;
+#clock {
+  font-size: 6rem;
 }
 
 .absolute {
@@ -10748,7 +10743,7 @@ input:focus, textarea:focus, select:focus {
 .author {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 1s linear;
 }
 
 .content:hover + .author {

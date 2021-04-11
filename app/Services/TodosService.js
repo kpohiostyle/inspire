@@ -24,9 +24,10 @@ class TodosService {
         if (checked.completed) {
             await api.put('kevin/todos/' + id, { completed: false })
             checked.completed = false
-        } else
+        } else {
             await api.put('kevin/todos/' + id, { completed: true })
-        checked.completed = true
+            checked.completed = true
+        }
         ProxyState.todos = ProxyState.todos
     }
 

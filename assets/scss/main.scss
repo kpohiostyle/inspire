@@ -7,9 +7,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background-size: cover;
-  background-position: center;
   
 }
 
@@ -21,7 +19,9 @@ main {
   border: none;
 }
 .weather{
-  background-color: rgb(56, 55, 55)  !important;
+  background-color: transparent;
+  border: none;
+  text-shadow: 1px 1px  black;
 }
 .middle{
   min-height: 60vh;
@@ -43,13 +43,8 @@ input:focus, textarea:focus, select:focus{
 .transparent{
   background-color: transparent;
 }
-.maybe{
-  display: none;
-  
-}
-.item:hover + .maybe{
-  display: inline;
-  cursor: pointer;
+#clock{
+  font-size: 6rem;
 }
 .absolute{
   position: fixed;
@@ -59,11 +54,9 @@ input:focus, textarea:focus, select:focus{
 .author{
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 1s linear;
 }
-// .content:hover{
-//   animation-timing-function: ease-in 2s;
-// }
+
 .content:hover +.author{
   visibility: visible;
   opacity: 1;
