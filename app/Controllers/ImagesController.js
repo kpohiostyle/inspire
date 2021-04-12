@@ -31,7 +31,7 @@ function showTime() {
         + min + am_pm;
 
     document.getElementById("clock")
-        .innerHTML = currentTime;
+        .innerText = currentTime;
 }
 
 

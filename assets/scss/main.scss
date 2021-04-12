@@ -9,8 +9,7 @@ body {
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
-  
-  
+  min-height: 100vh;
 }
 
 main {
@@ -66,22 +65,21 @@ input:focus, textarea:focus, select:focus{
   opacity: 1;
   
 }
-// .icon{
-//   visibility: hidden;
-//   opacity: 0;
-//   transition: visibility 0s, opacity 1s linear;
-// }
+.icon {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+  cursor: pointer;
+  &:hover {
+    color:red;
+  }
+}
 
-// .list:hover +.icon{
-//   visibility: visible;
-//   opacity: 1;
-  
-// }
-// .icon:hover +.icon{
-//   visibility: visible;
-//   opacity: 1;
-  
-// }
+.todo:hover .icon{
+  visibility: visible;
+  opacity: 1;
+}
+
 .txt-shadow{
   text-shadow: 1px 1px  black;
 }
